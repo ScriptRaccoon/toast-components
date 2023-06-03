@@ -1,11 +1,20 @@
 <script lang="ts" context="module">
 	import { writable } from "svelte/store";
 
+	export type toast_variant = "info" | "success" | "error";
+	export type toast_position =
+		| "top-left"
+		| "top-center"
+		| "top-right"
+		| "bottom-left"
+		| "bottom-center"
+		| "bottom-right";
+
 	type toast = {
 		id: string;
 		title: string;
 		description: string;
-		variant: "info" | "success" | "error";
+		variant: toast_variant;
 		duration: number;
 	};
 
@@ -41,13 +50,7 @@
 </script>
 
 <script lang="ts">
-	export let position:
-		| "top-left"
-		| "top-center"
-		| "top-right"
-		| "bottom-left"
-		| "bottom-center"
-		| "bottom-right" = "top-left";
+	export let position: toast_position = "top-left";
 
 	import { fly } from "svelte/transition";
 

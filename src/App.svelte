@@ -1,15 +1,18 @@
 <script lang="ts">
 	import Header from "./lib/components/Header.svelte";
 	import Menu from "./lib/components/Menu.svelte";
-	import Toast from "./lib/components/Toast.svelte";
+	import Toast, {
+		type toast_position,
+	} from "./lib/components/Toast.svelte";
+
+	let position: toast_position = "top-right";
 </script>
 
-<Toast position="top-right" />
-
+<Toast {position} />
 <Header />
 
 <main>
-	<Menu />
+	<Menu bind:position />
 </main>
 
 <style>
