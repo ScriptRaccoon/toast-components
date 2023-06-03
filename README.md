@@ -4,7 +4,7 @@ This repo contains a single-file Toast component which you can copy paste into y
 
 Demo: https://toast-components.netlify.app
 
-The file `src/lib/components/Toast.svelte` contains both the rendered Toast components as well as the function with which you can send toasts.
+The file [`src/lib/components/Toast.svelte`](https://github.com/ScriptRaccoon/toast-components/blob/main/src/lib/components/Toast.svelte) contains both the rendered Toast components as well as the function with which you can send toasts.
 
 ## Usage
 
