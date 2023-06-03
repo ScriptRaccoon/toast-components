@@ -2,6 +2,8 @@
 
 This repo contains a single-file Toast component which you can copy paste into your Svelte (or SvelteKit) project.
 
+Demo: https://toast-components.netlify.app
+
 The file `src/lib/components/Toast.svelte` contains both the rendered Toast components as well as the function with which you can send toasts.
 
 ## Usage
@@ -36,4 +38,4 @@ Pass the following options to this function:
 -   `variant: "info" | "success" | "error"` (default: `info`)
 -   `duration: number` (default: `3000`)
 
-If you want to customize the Toasts, just edit the Svelte component as you like.
+If you want to customize the Toasts, just edit the Svelte component `Toast.svelte` as you like.
