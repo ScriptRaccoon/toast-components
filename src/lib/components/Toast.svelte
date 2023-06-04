@@ -10,7 +10,7 @@
 		| "bottom-center"
 		| "bottom-right";
 
-	type toast = {
+	export type toast = {
 		id: string;
 		title: string;
 		description: string;
@@ -18,7 +18,7 @@
 		duration: number;
 	};
 
-	const default_toast = {
+	export const default_toast = {
 		title: "",
 		description: "",
 		variant: "info",
